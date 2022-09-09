@@ -1,0 +1,11 @@
+Etapas da importação de dados para o Weka
+
+1. Baixar o JSON do firebase
+2. Alterar sua estrutura para a chave única virar uma propriedade
+3. Utilizar a aplicação C# para salvar os registros num banco relacional
+4. Usar uma consulta para pivotar os registros fazendo cada roteador ser uma coluna
+5. Converter o resultado da consulta para csv
+6. Trocar os 'NULL' por "?" e as ";" por ","
+7. Adicionar cabeçalhos
+8. Usar o Weka para converter o csv para arff
+9. Corrigir o arff para todos os valores RSSI serem numéricos
