@@ -1,0 +1,45 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.MinkowskiDistance -P 2.0 -R first-last\""
+Relation:     c
+Instances:    48
+Attributes:   247
+              [list of attributes omitted]
+Test mode:    split 66.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.01 seconds
+
+=== Summary ===
+
+Correctly Classified Instances           6               37.5    %
+Incorrectly Classified Instances        10               62.5    %
+Kappa statistic                         -0.0959
+Mean absolute error                      0.6176
+Root mean squared error                  0.7675
+Relative absolute error                118.3099 %
+Root relative squared error            146.2241 %
+Total Number of Instances               16     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,600    0,727    0,273      0,600    0,375      -0,127   0,436     0,289     C21
+                 0,273    0,400    0,600      0,273    0,375      -0,127   0,436     0,664     A11
+Weighted Avg.    0,375    0,502    0,498      0,375    0,375      -0,127   0,436     0,546     
+
+=== Confusion Matrix ===
+
+ a b   <-- classified as
+ 3 2 | a = C21
+ 8 3 | b = A11
+
