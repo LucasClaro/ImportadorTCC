@@ -9,3 +9,8 @@ Etapas da importação de dados para o Weka
 7. Adicionar cabeçalhos
 8. Usar o Weka para converter o csv para arff
 9. Corrigir o arff para todos os valores RSSI serem numéricos
+
+REGEX:
+"(-[A-z0-9\-]+)": \{
+
+{\n\t\t"idFirebase": "$1",
