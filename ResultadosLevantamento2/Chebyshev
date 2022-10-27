@@ -1,0 +1,73 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.ChebyshevDistance -R first-last\""
+Relation:     b
+Instances:    507
+Attributes:   611
+              [list of attributes omitted]
+Test mode:    split 66.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.48 seconds
+
+=== Summary ===
+
+Correctly Classified Instances           7                4.0698 %
+Incorrectly Classified Instances       165               95.9302 %
+Kappa statistic                          0     
+Mean absolute error                      0.1162
+Root mean squared error                  0.2415
+Relative absolute error                 99.9613 %
+Root relative squared error            100.0158 %
+Total Number of Instances              172     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1,000    1,000    0,041      1,000    0,078      ?        0,500     0,041     A11
+                 0,000    0,000    ?          0,000    ?          ?        0,500     0,099     A12
+                 0,000    0,000    ?          0,000    ?          ?        0,500     0,076     A21
+                 0,000    0,000    ?          0,000    ?          ?        0,500     0,076     A22
+                 0,000    0,000    ?          0,000    ?          ?        0,500     0,035     B11
+                 0,000    0,000    ?          0,000    ?          ?        0,500     0,017     B21
+                 0,000    0,000    ?          0,000    ?          ?        0,500     0,076     C11
+                 0,000    0,000    ?          0,000    ?          ?        0,500     0,116     C12
+                 0,000    0,000    ?          0,000    ?          ?        0,500     0,076     C21
+                 0,000    0,000    ?          0,000    ?          ?        0,500     0,105     C22
+                 0,000    0,000    ?          0,000    ?          ?        0,500     0,064     D11
+                 0,000    0,000    ?          0,000    ?          ?        0,500     0,081     D21
+                 0,000    0,000    ?          0,000    ?          ?        0,500     0,017     E11
+                 0,000    0,000    ?          0,000    ?          ?        0,500     0,023     E21
+                 0,000    0,000    ?          0,000    ?          ?        0,500     0,081     F21
+                 0,000    0,000    ?          0,000    ?          ?        0,500     0,017     NASA
+Weighted Avg.    0,041    0,041    ?          0,041    ?          ?        0,500     0,079     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h  i  j  k  l  m  n  o  p   <-- classified as
+  7  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  a = A11
+ 17  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  b = A12
+ 13  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  c = A21
+ 13  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  d = A22
+  6  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  e = B11
+  3  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  f = B21
+ 13  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  g = C11
+ 20  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  h = C12
+ 13  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  i = C21
+ 18  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  j = C22
+ 11  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  k = D11
+ 14  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  l = D21
+  3  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  m = E11
+  4  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  n = E21
+ 14  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  o = F21
+  3  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  p = NASA
+
