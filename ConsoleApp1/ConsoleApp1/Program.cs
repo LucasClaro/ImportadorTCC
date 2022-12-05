@@ -54,7 +54,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
                     if (registro.conexoes != null)
                     {
                         SqlCommand cmd = cn.CreateCommand();
-                        cmd.CommandText = "declare @x table (id int); insert into Registro2 (idFirebase, sala, setor) output inserted.id into @x values (@fire, @sala, @setor); select id from @x";
+                        cmd.CommandText = "declare @x table (id int); insert into Registro3 (idFirebase, sala, setor) output inserted.id into @x values (@fire, @sala, @setor); select id from @x";
                         cmd.Parameters.Add("@fire", System.Data.SqlDbType.VarChar, 25).Value = registro.idFirebase;
                         cmd.Parameters.Add("@sala", System.Data.SqlDbType.VarChar, 20).Value = registro.sala;
                         cmd.Parameters.Add("@setor", System.Data.SqlDbType.VarChar, 15).Value = registro.setor;
@@ -68,7 +68,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
                         foreach (Conexo conexo in registro.conexoes)
                         {
                             cmd.Parameters.Clear();
-                            cmd.CommandText = @"insert into Conexao2 (bssid, rssi, ssid, idRegistro) values
+                            cmd.CommandText = @"insert into Conexao3 (bssid, rssi, ssid, idRegistro) values
                                 (@bssid, @rssi, @ssid, @idRegistro)";
                             cmd.Parameters.Add("@bssid", System.Data.SqlDbType.Char, 17).Value = conexo.bssid;
                             cmd.Parameters.Add("@rssi", System.Data.SqlDbType.Int).Value = conexo.rssi;
